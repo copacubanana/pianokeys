@@ -1,0 +1,253 @@
+/* ================== General Layout ===================================== */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, Times, Times New Roman, serif;
+}
+
+body {
+	background-color: rgb(226,234,255);
+
+}
+
+div.row {
+}
+
+div.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div.content {
+	position: relative;
+	width: 50em;
+	margin: 0 auto;
+}
+
+/* ================== Header ================== */
+
+.header {
+	background-color: white;
+	width: 100%;
+	height: 8em;
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 1em;
+	margin-top: .75em;
+	border: .5em double LightGray;
+}
+
+h1#title {
+	font-size: 3em;
+	height: 1em;
+	margin: 0;
+}
+
+h2 {
+	padding: .2em;
+	color: gray;
+}
+
+/* ================== Footer ================== */
+
+.footer {
+	height: 5em;
+	width: 100%;
+	/* padding: 2em 0; */
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	background-color: navy;
+	color: white;
+	padding: 1.25em;
+	
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+}
+
+/* ================================ current key ======================================= */
+
+div.currentkey {
+
+	margin: .25em 1em;
+	padding-top: .25em;
+	height: 1.75em;
+	width: 90%;
+	font-size: 2.8em;
+	text-align: center;
+	background-color: #CEAC41;
+	color: white;
+	
+}
+
+/* ==================================== Piano Keys =================================== */
+
+div#pianokeys {
+	width: 40em;
+	height: 29em;
+	cursor: pointer;
+	position: relative;
+	margin: 0 auto;
+	
+}
+
+div.pianokeyblack {
+	position: absolute;
+	top: .5em;
+	z-index: 1;
+	display: block;
+	float: left;
+	width: 3.5em;
+	padding: 0;
+	margin: 0;
+	height: 18em;
+	background-size: contain;
+
+}
+
+div.pianokeywhite {
+	position: absolute;
+	/* position: relative; */
+	z-index: 0;
+	display: block;
+	float: left;
+	width: 5em;
+	height: 29em;
+	background-size: contain;
+
+}
+
+/* ================================ black keys img ======================================= */
+
+div#pianokeycsharp {
+	left: 4.5em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -730px -15px;
+}
+
+div#pianokeydsharp {
+	left: 10em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -796px -15px;
+}
+
+div#pianokeyfsharp {
+	left: 18.25em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -920px -15px;
+}
+
+div#pianokeygsharp {
+	left: 23.5em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -980px -15px;
+
+}
+
+div#pianokeyasharp {
+	left: 29.35em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -1050px -15px;
+}
+
+/* ================================ HOVER black keys img ======================================= */
+
+div#pianokeycsharp:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -730px -15px;
+}
+
+div#pianokeydsharp:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -796px -15px;
+}
+
+div#pianokeyfsharp:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -920px -15px;
+}
+
+div#pianokeygsharp:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -980px -15px;
+}
+
+div#pianokeyasharp:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -1050px -15px;
+}
+
+
+
+/* ================================ white keys img ======================================= */
+
+div#pianokeyc {
+	left: 1.8em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -14px 0;
+}
+
+div#pianokeyd {
+	left: 6.70em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -107px 0;
+}
+
+div#pianokeye {
+	left: 11.4em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -200px 0;
+}
+
+div#pianokeyf {
+	left: 15.8em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -283px 0;
+}
+
+div#pianokeyg {
+	left: 20.7em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -372px 0;
+}
+
+div#pianokeya {
+	left: 25.5em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -460px 0;
+}
+
+div#pianokeyb {
+	left: 30.35em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -550px 0;
+}
+
+div#pianokeycmaj {
+	left: 35em;
+	background: url('../images/pianokeyssprite.gif') no-repeat -640px 0;
+}
+
+/* ================================ HOVER white keys img ======================================= */
+
+div#pianokeyc:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -14px 0;
+}
+
+div#pianokeyd:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -107px 0;
+}
+
+div#pianokeye:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -200px 0;
+}
+
+div#pianokeyf:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -283px 0;
+}
+
+div#pianokeyg:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -372px 0;
+}
+
+div#pianokeya:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -460px 0;
+}
+
+div#pianokeyb:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -550px 0;
+}
+
+div#pianokeycmaj:hover {
+	background: url('../images/pianokeysspritehover.gif') no-repeat -640px 0;
+}
